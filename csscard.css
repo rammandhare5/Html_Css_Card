@@ -3,6 +3,40 @@
     font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.browser {
+    height: 100px;
+    border: 1px solid #000000;
+    width: 200px;
+}
+
+
+/* Styles for INTERNET EXPLORER (Version > 10 and Microsoft Edge): */
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .block {
+        background-color: #00FF00;
+    }
+}
+
+
+/* Styles for GOOGLE CHROME (Tested in version 55.0.2883.87): */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .block {
+        background-color: #FF0000;
+    }
+}
+
+
+/* Styles for Mozilla Firefox (51.0.1): */
+
+@-moz-document url-prefix() {
+    .block {
+        background-color: #0000FF;
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,8 +46,10 @@ body {
     background-color: #FAFAFA;
     overflow: hidden;
     /* overflow: hidden; */
-    /* overflow: hidden; */
-    /* overflow: hidden; */
+    /* overflow: hidden;
+
+
+/* overflow: hidden; */
 }
 
 .card-container {
